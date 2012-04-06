@@ -1,0 +1,18 @@
+#feature{
+text-align: center
+}
+
+.clearBoth {
+clear: both
+}
+
+.intro {
+font-size: medium;
+text-align: center;
+padding: 1em;
+text-transform: uppercase
+}
+
+.ui-block-a {
+text-align: center
+}

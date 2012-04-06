@@ -1,0 +1,196 @@
+/* 
+Author: Jose A. Carrillo
+Full Sail University | Mobile Web Development | Visual Frameworks | Web App
+February 8, 2012
+*/
+
+@import url('reset.css');
+@import url(http://fonts.googleapis.com/css?family=Amethysta);
+@import url(http://fonts.googleapis.com/css?family=Homenaje);
+
+body {
+background-color: rgba(88,88,96,1);
+background-image: url('../images/bg.jpg');
+font-family: 'Amethysta', serif;
+
+}
+
+#mainWrapper {
+margin:1em auto;
+width:94%;
+}
+
+header {
+background-color: rgba(213,222,220,1);
+background-image: url('../images/top-bg.jpg');
+border-bottom-color: rgba(233,233,233,1);
+border-bottom-width: 1px;
+border-bottom-style: solid;
+}
+
+hgroup {
+color: rgba(70, 75, 75, 1);
+display: block;
+padding: 0 20px;
+text-decoration: none;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+text-align: center;
+font-family: 'Homenaje', sans-serif;
+padding: 1em 0;
+}
+
+h1 {
+font-size: 1.8em;
+}
+
+h2 {
+font-size: 1.4em
+}
+
+p{
+margin:1em
+}
+
+nav ul li, .footerNav ul li{
+display: inline;
+text-decoration: none;
+font-size: .9em;
+padding: 0 1em
+}
+
+nav ul li a {
+text-decoration: none;
+color: rgba(70, 75, 75, 1);
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+text-transform: uppercase
+}
+
+.footerNav ul li a {
+text-decoration: none;
+color: rgba(255,255,255,1);
+text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.9);
+}
+
+nav, footerNav {
+line-height: 2em;
+text-align: center
+}
+
+#mainContainer, #items {
+color: #666666;
+font-size: 1em;
+line-height: 1.3;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.9);
+background-color: rgba(225,226,220,1);
+background-image: url('../images/center-bg.jpg');
+/*
+-moz-border-radius-topleft: 0;
+-moz-border-radius-topright: 0;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+-webkit-border-radius: 0 0 5px 5px;
+border-radius: 0 0 5px 5px;
+*/
+margin-bottom:0;
+border-top-color: color: rgba(175,175,175,1);
+border-top-width: 1px;
+border-top-style: solid;
+}
+
+footer {
+min-height: 80px;
+color: rgba(255,255,255,1);
+font-size: .9em;
+text-align: center;
+text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.9);
+background-color: rgba(36,37,39,1);
+background-image: url('../images/footer.jpg');
+}
+
+.button, input[type=submit] {
+border-radius: 0.5em 0.5em 0.5em 0.5em;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+display: inline-block;
+margin: 0 2px;
+outline: medium none;
+padding: 0.5em 2em 0.55em;
+text-align: center;
+text-decoration: none;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+vertical-align: baseline;
+margin:2em auto;
+-webkit-appearance: none;
+
+}
+
+.orange, input[type=submit] {
+background-color: rgba(245, 100, 10, 1);
+border: 1px solid rgba(218, 125, 10, 1);
+color: rgba(255, 245, 235, 1);
+}
+
+.centeredText {
+text-align:center
+}
+
+.footerNav {
+padding:1em 0
+}
+
+/* Form Style */
+
+form {
+padding:0 1em;
+margin:0
+}
+
+label.displayBlock{
+display:block
+}
+
+fieldset ul li{
+margin: .4em 0
+}
+
+input[type=text], textarea {
+width:200px
+}
+
+input[type=submit] {
+font-size: 1em
+}
+
+.submitButton{
+margin:0 auto;
+text-align: center;
+}
+
+#items {
+margin:-1em auto;
+width:94%;
+padding-bottom: 1em
+}
+
+#items ul {
+margin:1em 0 2em 1em
+}
+
+#dataLinks{
+text-align: center;
+padding: .4em
+}
+
+#dataLinks a{
+margin:0 .4em
+}
+
+span.alert {
+font-size: smaller;
+color: rgba(255, 0, 0, 1);
+padding: 0 .4em
+}
+
+ul#errors {
+color: rgba(255, 0, 0, 1);
+}

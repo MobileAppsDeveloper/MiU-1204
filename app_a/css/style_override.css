@@ -1,0 +1,31 @@
+#feature{
+text-align: center
+}
+
+.clearBoth {
+clear: both
+}
+
+.intro {
+font-size: medium;
+text-align: center;
+padding: 1em;
+text-transform: uppercase
+}
+
+.ui-block-a,  .ui-block-b {
+text-align: center
+}
+
+.ui-block-a a,  .ui-block-b a {
+text-decoration: none
+}
+
+.ui-block-a p,  .ui-block-b p {
+font-weight: normal
+}
+
+.centeredContent {
+text-align: center;
+margin: 0	auto
+}
