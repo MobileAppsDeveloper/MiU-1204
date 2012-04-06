@@ -13,6 +13,65 @@ padding: 1em;
 text-transform: uppercase
 }
 
-.ui-block-a {
+.ui-block-a,  .ui-block-b {
 text-align: center
+}
+
+.ui-block-a a,  .ui-block-b a {
+text-decoration: none
+}
+
+.ui-block-a p,  .ui-block-b p {
+font-weight: normal
+}
+
+.centeredContent {
+text-align: center;
+margin: 0	auto
+}
+
+
+/* Filmstrip CSS */
+.iosSlider {
+width: 900px;
+height: 400px;
+}
+
+.iosSlider .slider {
+width: 100%;
+height: 100%;
+}
+
+.iosSlider .slider .item {
+position: relative;
+top: 0;
+left: 0;
+width: 900px;
+height: 300px;
+background: #fff;
+margin: 0 auto;
+}
+
+.iosSlider .slider #item1 {
+background: url(../images/the-amazing-spiderman.png) no-repeat 0 0;
+}
+
+.iosSlider .slider #item2 {
+background: url(../images/the-hunger-games.png) no-repeat 0 0;
+}
+
+.iosSlider .slider #item3 {
+background: url(../images/snow-white.png) no-repeat 0 0;
+}
+
+.iosSlider .slider #item4 {
+background: url(../images/men-in-black-3.png) no-repeat 0 0;
+}
+
+.iosSlider .slider #item5 {
+background: url(../images/total-recall.png) no-repeat 0 0;
+}
+
+.iosSlider .slider #item6 {
+background: url(../images/the-avengers.png) no-repeat 0 0;
 }
