@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Create and update your own inventory of books, movies, games and software." />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
 		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Jose A. Carrillo" />
@@ -13,11 +13,15 @@
 		<!-- Allows for proper display on Androids -->
 		<meta name="viewport" content="target-densitydpi=device-dpi" />
 		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
 		<!-- Allows for optimized display on older feature phones -->
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
 		
-		<title>My Media Library</title>
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.css" />
 		<link rel="stylesheet" href="../css/style.css">
 		
 		<!--[if lt IE 9]>
@@ -71,7 +75,27 @@
 			
 				<p id="copyrights">Developed by Jose A. Carrillo</p>
 			</footer>
+	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0-rc.1/jquery.mobile-1.1.0-rc.1.min.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				$.mobile.touchOverflowEnabled = true;
+			});
+		</script>		
+		<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>	
+		<script type="text/javascript">
+			$(document).ready(function() {
 			
+				$('.iosSlider').iosSlider({
+					desktopClickDrag: true
+				});
+				
+			});
+		</script>
+			
+		<script src="../js/json.js"></script>	
+		<script src="../js/main.js"></script>	
+	
 	</body>
-		
 </html>
