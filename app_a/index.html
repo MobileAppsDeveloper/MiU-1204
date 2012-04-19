@@ -19,16 +19,28 @@
 		<!-- Allows for optimized display on older feature phones -->
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
+
+		<link rel="apple-touch-icon" href="../images/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../images/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../images/touch-icon-iphone4.png">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		
 		<title>The Outlet</title> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		<link rel="stylesheet" href="../css/style_override.css">
-		
+		<link rel="stylesheet" href="../css/add2home.css">
 		
 		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
-		<script src="js/libs/modernizr.custom.min.js"></script>
+		<script src="../js/libs/modernizr.custom.min.js"></script>
 
-
+		<script src="../js/add2home.js" charset="utf-8">
+		<script type="text/javascript">
+		var addToHomeConfig = {
+			message: 'This is a custom message. Your device is an <strong>%device</strong>. The action icon is %icon.'
+		};
+		</script>
 
 		<!--<script>
 		$.get('data.html',function(data){
@@ -137,19 +149,11 @@ $(document).bind("mobileinit", function(){
 $.mobile.touchOverflowEnabled = true;
 });
 </script>
-<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
 
-$('.iosSlider').iosSlider({
-desktopClickDrag: true
-});
-
-});
-</script>
 
 <script src="../js/json.js"></script>
 <script src="../js/main.js"></script>
+
 
 </body>
 </html>
