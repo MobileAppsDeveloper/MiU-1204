@@ -75,3 +75,52 @@ background: url(../images/total-recall.png) no-repeat 0 0;
 .iosSlider .slider #item6 {
 background: url(../images/the-avengers.png) no-repeat 0 0;
 }
+
+/*
+html, body { height:100% }
+body, h1, h2, p { border:0; margin:0; padding:0; }
+body {
+	font-family: helvetica, arial, sans-serif;
+	background-color:#444;
+	background-image:-webkit-gradient(radial, 50% 50%, 0, 50% 50%, 300, from(#888), to(#444));
+	background-image:-moz-radial-gradient(50% 50%, circle, #888 0px, #444 300px);
+	background-size:100% 100%;
+	-webkit-perspective:500px;
+	-moz-perspective:500px;
+}
+a { color:#bbb; }
+#text {
+	position:absolute;
+	width:600px;
+	height:120px;
+	left:50%;
+	top:50%;
+	margin-left:-300px;
+	margin-top:-60px;
+	text-align:center;
+	text-transform:uppercase;
+	-webkit-tranform:translateZ(0);
+	-webkit-transition-duration:0.05s;
+	-moz-tranform:translateZ(0);
+	color:#f3f3f3;
+	text-shadow:0 0 1px rgba(0,0,0,.2);
+}
+
+h1 {
+	font-size:50px;
+}
+
+h2 {
+	font-size:35px;
+}
+
+p {
+	display:absolute;
+	top:0;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+	font-size:12px;
+	color:#aaa;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.1);
+}*/

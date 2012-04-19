@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<!-- bof Movie 2: #Snow White and the Huntsman -->
+<div data-role="page" id="snowWhite">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Snow White and the Huntsman</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Snow White and the Huntsman</h2>
+<div class="movieImage">
+<img src="../images/snow-white_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays the only person in the land fairer than the evil queen (Oscar(r) winner Charlize Theron) out to destroy her. But what the wicked ruler never imagined is that the young woman threatening her reign has been training in the art of war with a huntsman (Chris Hemsworth, Thor) dispatched to kill her. Sam Claflin (Pirates of the Caribbean: On Stranger Tides) joins the cast as the prince long enchanted by Snow White's beauty and power. The breathtaking new vision of the legendary tale is from Joe Roth, the producer of Alice in Wonderland, producer Sam Mercer (The Sixth Sense) and acclaimed commercial director and state-of-the-art visualist Rupert Sanders.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure</li>
+<li data-theme="b"><a href="http://snowwhiteandthehuntsman.com" target="_blank">Visit the Official Site</a></li>
+<li>Director: Rupert Sanders</li>
+<li>Cast: Kristen Stewart, Charlize Theron, Chris Hemsworth, Sam Claflin</li>
+<li>Writers: Evan Daugherty</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/2-UMNSVX7_I" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 2: #Snow White and the Huntsman -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+$.mobile.touchOverflowEnabled = true;
+});
+</script>
+<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.iosSlider').iosSlider({
+desktopClickDrag: true
+});
+
+});
+</script>
+
+<script src="../js/json.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

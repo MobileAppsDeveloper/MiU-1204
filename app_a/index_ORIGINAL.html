@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<!-- bof Page 1: #index -->
+<div data-role="page" id="index" data-add-back-btn="true">
+
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>The Outlet</h1>
+<!--<a href="index.html" data-icon="check">Save</a>-->
+</div><!-- /header -->
+
+<div data-role="content" >
+
+<div class="centeredContent">
+<img src="images/movies.png" />
+</div>
+
+<div class="intro">
+Movies, MP3s, DVDs
+</div>
+
+<!--<h2>iRate My Flicks</h2>-->
+<br class="clearBoth" />
+<div class="content-primary">
+<ul data-role="listview" data-filter="true" data-inset="true">
+<li data-theme="b"><h3>Unlimited Instant Videos</h3><span class="ui-li-count">5</span>
+<p>You could have unlimited instant streaming of thousands of movies and TV shows included with an Amazon Prime membership at no additional cost.</p>
+<ul>
+<li data-theme="b"><a href="view_ratings.html">Categories</a><span class="ui-li-count">5</span>
+<ul>
+<li data-theme="b"><a href="action_rows.html">Action & Adventure<span class="ui-li-count">5</span></a></li>
+<li><a href="view_ratings.html">Anime</a></li>
+<li><a href="view_ratings.html">Children & Family</a></li>
+<li><a href="view_ratings.html">Classics</a></li>
+<li><a href="view_ratings.html">Comedies</a></li>
+<li><a href="view_ratings.html">Documentaries</a></li>
+<li><a href="view_ratings.html">Dramas</a></li>
+<li><a href="view_ratings.html">Faith & Spirituality</a></li>
+<li><a href="view_ratings.html">Foreign</a></li>
+<li><a href="view_ratings.html">Gay & Lesbian</a></li>
+<li><a href="view_ratings.html">Horror</a></li>
+<li><a href="view_ratings.html">Independent</a></li>
+<li><a href="view_ratings.html">Music</a></li>
+<li><a href="view_ratings.html">Musicals</a></li>
+<li><a href="view_ratings.html">Romance</a></li>
+<li><a href="view_ratings.html">Sci-Fi & Fantasy</a></li>
+<li><a href="view_ratings.html">Special Interest</a></li>
+<li><a href="view_ratings.html">Sport & Fitness</a></li>
+<li><a href="view_ratings.html">TV Shows</a></li>
+<li><a href="view_ratings.html">Thrilers</a></li> </ul>
+</li>
+
+<li><a href="view_ratings.html">Your Video Library<span class="ui-li-count">0</span></a></li>
+<li><a href="view_ratings.html">Watch Anywhere<span class="ui-li-count">0</span></a></li>
+</ul>
+</li>
+<li>
+<a href="news1.html"><h3>News</h3>
+<p>Infinite List Demo. The page was designed using the infinite list format and at the bottom displays a "load more messages" button that links to a second page.</p>
+</a>
+</li>
+<li>
+<a href="filmstrip.html" data-ajax="false"><h3>Filmstrip</h3>
+<p>Filmstrip Demo. This filmstrip uses the iosslider script.</p>
+</a>
+</li>
+<li>
+<a href="http://mobileappsdeveloper.github.com/MiU-1204" target="_blank"><h3>Github</h3>
+<p>The github page (opens in a new window)</p>
+</a>
+</li>
+<li>
+<a href="http://github.com/MobileAppsDeveloper/MiU-1204" target="_blank"><h3>Repository</h3>
+<p>The github repository (opens in a new window)</p>
+</a>
+</li>
+</ul>
+</div><!--/content-primary -->
+
+<!--
+<h3>Show internal pages:</h3>
+<a href="#addFlick" >link</a>
+<p><a href="#addFlick" data-role="button">Show page "addFlick"</a></p>
+<p><a href="#PopUp1"data-role="button" data-rel="dialog" data-transition="pop">Show page "PopUp1" (as a dialog)</a></p>
+-->
+</div><!-- /content -->
+
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 1: #index -->
+
+
+<!-- bof Page 2: #addFlick -->
+<div data-role="page" id="addFlick" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Add A Flick</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<div id="dataLinks" data-role="controlgroup" data-type="horizontal">
+
+<a href="#" id="clear" title="Clear Stored Data" data-role="button" data-mini="true" data-ajax="false">Clear</a>
+<a href="#" id="displayLink" title="Display Data" data-role="button" data-mini="true" data-ajax="false">Display</a>
+<a href="#addFlick" id="addNew" style="display:none" data-role="button" data-mini="true" data-ajax="false">Add Flick</a>
+
+</div>
+
+<div id="myjSonList"></div>
+<form action="#" method="post" id="addItemForm">
+<span class="alert">* fields are required</span>
+<ul id="errors"></ul>
+<div data-role="fieldcontain" id="questions">
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+<label for="itemTitle">Flick Title<span class="alert">*</span></label>
+<input type="text" id="itemTitle" />
+</fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<label for="genre">Genre<span class="alert">*</span></label>
+<select name="genre" id="select" data-native-menu="false">
+<option value="actionRows">Action & Adventure</option>
+<option value="anime">Anime</option>
+<option value="children">Children & Family</option>
+<option value="classics">Classics</option>
+<option value="comedies">Comedies</option>
+<option value="documentaries">Documentaries</option>
+<option value="dramas">Dramas</option>
+<option value="faith">Faith & Spirituality</option>
+<option value="foreign">Foreign</option>
+<option value="gay">Gay & Lesbian</option>
+<option value="horror">Horror</option>
+<option value="independent">Independent</option>
+<option value="music">Music</option>
+<option value="musicals">Musicals</option>
+<option value="romance">Romance</option>
+<option value="sci-fi">Sci-Fi & Fantasy</option>
+<option value="special">Special Interest</option>
+<option value="sport">Sport & Fitness</option>
+<option value="tv">TV Shows</option>
+<option value="thrillers">Thrilers</option>
+</select>
+</div>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+<legend>Rated</legend>
+<input type="radio" checked value="NC-17" id="nc-17" name="condition" /><label for="nc-17">NC-17</label>
+<input type="radio" value="R" id="r" name="condition" /><label for="r">R</label>
+<input type="radio" value="PG-13" id="pg-13" name="condition" /><label for="pg-13">PG-13</label>
+<input type="radio" value="PG" id="poor" name="condition" /><label for="poor">PG</label>
+</fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<label class="displayBlock" for="description">Description</label>
+<textarea id="description" placeholder="Type additional Information here"></textarea>
+</div>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+<legend>Favorites</legend>
+<legend for="irating">iRating</legend>
+<input type="range" min="1" max="5" name="irating" id="irating" />
+</fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+<label for="favorite">Save as Favorite</label>
+<input type="checkbox" value="Save as Favorite" id="favorite" name="favorite" />
+</fieldset>
+</div>
+
+<div data-role="fieldcontain">
+<fieldset data-role="controlgroup">
+<label for="dateAdded">Date Added<span class="alert">*</span></label>
+<input type="date" min="1960-01-01" max="2015-12-31" id="dateAdded" name="dateAdded" placeholder="1960-07-25" />
+</fieldset>
+</div>
+
+<div class="submitButton">
+<input type="submit" value="Send Information" id="submit"/>
+</div>
+
+
+
+</form>
+</div>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 2: #addFlick -->
+
+
+<!-- bof Page 3: #faq -->
+<div data-role="page" id="faq" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>FAQs</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>Frequently Asked Questions</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 3: #faq -->
+
+
+<!-- bof Page 4: #contactUs -->
+<div data-role="page" id="contactUs" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Contact</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>Contact</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 4: #contactUs -->
+
+
+<!-- bof Page 5: #about -->
+<div data-role="page" id="about" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>About iRate My Flicks</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>About iRate My Flicks</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 5: #about -->
+
+
+<!-- bof Page 6: #viewMyRatings -->
+<div data-role="page" id="viewMyRatings" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>View My Ratings</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>View My Ratings</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 6: #viewMyRatings -->
+
+
+<!-- bof Page 7: #actionRows -->
+<div data-role="page" id="actionRows">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Action & Adventure</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Action & Adventure</h2>
+
+
+<div data-role="fieldcontain">
+<div data-role="controlgroup" data-type="horizontal" class="centeredContent">
+<a href="action_rows.html" data-role="button" data-theme="b">Rows</a>
+<a href="action_columns.html" data-role="button" data-theme="a">Columns</a>
+</div>
+</div>
+
+<div class="ui-grid-a">
+<div class="ui-block-a">
+<a href="the_avengers.html">
+<img src="../images/the-avengers.png" />
+<h3>The Avengers</h3>
+<p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the . ..</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="snow_white.html">
+<img src="../images/snow-white.png" />
+<h3>Snow White and the Huntsman</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays ...</p>
+</a>
+</div>
+<div class="ui-block-a">
+<a href="hunger_games.html">
+<img src="../images/the-hunger-games.png" />
+<h3>The Hunger Games</h3>
+<p>Every year in the ruins of what was once North America, the evil Capitol of the nation of ...</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="spiderman.html">
+<img src="../images/the-amazing-spiderman.png" />
+<h3>The Amazing Spider-Man</h3>
+<p>The film, which is now in production and is being shot entirely in 3D, will be released on July ...</p>
+</a>
+</div>
+<div class="ui-block-a">
+<a href="total_recall.html">
+<img src="../images/total-recall.png" />
+<h3>Total Recall</h3>
+<p>Total Recall is an action thriller about reality and memory, inspired anew by the famous short...</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="men_in_black.html">
+<img src="../images/men-in-black-3.png" />
+<h3>Men in Black 3</h3>
+<p>In Men in Black 3, Agents J (Will Smith) and K (Tommy Lee Jones) are back... in time. J has ...</p>
+</a>
+</div>
+</div>
+
+
+
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 7: #actionRows -->
+
+
+
+
+<!-- bof Page 7a: #actionColumns -->
+<div data-role="page" id="actionColumns">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Action & Adventure</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Action & Adventure</h2>
+
+
+<div data-role="fieldcontain">
+<div data-role="controlgroup" data-type="horizontal" class="centeredContent">
+<a href="action_rows.html" data-role="button" data-theme="a">Rows</a>
+<a href="action_columns.html" data-role="button" data-theme="b">Columns</a>
+</div>
+</div>
+<br />
+<ul data-role="listview" data-filter="true">
+<li><a href="the_avengers.html">
+<img src="../images/the-avengers.png" />
+<h3>The Avengers</h3>
+<p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the . ..</p>
+</a>
+</li>
+<li><a href="snow_white.html">
+<img src="../images/snow-white.png" />
+<h3>Snow White and the Huntsman</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays ...</p>
+</a>
+</li>
+<li><a href="hunger_games.html">
+<img src="../images/the-hunger-games.png" />
+<h3>The Hunger Games</h3>
+<p>Every year in the ruins of what was once North America, the evil Capitol of the nation of ...</p>
+</a>
+</li>
+<li><a href="spiderman.html">
+<img src="../images/the-amazing-spiderman.png" />
+<h3>The Amazing Spider-Man</h3>
+<p>The film, which is now in production and is being shot entirely in 3D, will be released on July ...</p>
+</a>
+</li>
+<li><a href="total_recall.html">
+<img src="../images/total-recall.png" />
+<h3>Total Recall</h3>
+<p>Total Recall is an action thriller about reality and memory, inspired anew by the famous short...</p>
+</a>
+</li>
+<li><a href="men_in_black.html">
+<img src="../images/men-in-black-3.png" />
+<h3>Men in Black 3</h3>
+<p>In Men in Black 3, Agents J (Will Smith) and K (Tommy Lee Jones) are back... in time. J has ...</p>
+</a>
+</li>
+</ul>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 7a: #actionColumns -->
+
+
+
+<!-- bof Page X: #Template -->
+<div data-role="page" id="Template" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Template</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>Template</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page X: #Template -->
+
+
+<!-- bof Page X: #My Favorites -->
+<div data-role="page" id="favs" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>My Favorites</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>My Favorites</h2>
+<p>Coming Soon</p>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page X: #My Favorites -->
+
+
+
+
+
+
+<!-- bof Movies for Categories -->
+<!-- bof Movie 1: #The Avengers -->
+<div data-role="page" id="theAvengers">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>The Avengers</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>The Avengers</h2>
+<div class="movieImage">
+<img src="../images/the-avengers_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the Super Hero team up of a lifetime, featuring iconic Marvel Super Heroes Iron Man, The Incredible Hulk, Thor, Captain America, Hawkeye and Black Widow. When an unexpected enemy emerges that threatens global safety and security, Nick Fury, Director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins. Starring Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner and Samuel L. Jackson, and directed by Joss Whedon, "Marvel's The Avengers" is based on the ever-popular Marvel comic book series "The Avengers," first published in 1963 and a comics institution ever since. Prepare yourself for an exciting event movie, packed with action and spectacular special effects, when "Marvel's The Avengers" assemble in summer 2012. In "Marvel's The Avengers," superheroes team up to pull the world back from the brink of disaster when an unexpected enemy threatens global security.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure, Science Fiction</li>
+<li data-theme="b"><a href="http://avengers.marvel.com" target="_blank">Visit the Official Site</a></li>
+<li>Director: Joss Whedon</li>
+<li>Cast: Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, Jeremy Renner, Tom Hiddleston, Stellan Skarsgård , Samuel L. Jackson</li>
+<li>Writers: Joss Whedon</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/eOrNdBpGMv8" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 1: #The Avengers -->
+
+
+
+
+
+<!-- bof Movie 2: #Snow White and the Huntsman -->
+<div data-role="page" id="snowWhite">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Snow White and the Huntsman</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Snow White and the Huntsman</h2>
+<div class="movieImage">
+<img src="../images/snow-white_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays the only person in the land fairer than the evil queen (Oscar(r) winner Charlize Theron) out to destroy her. But what the wicked ruler never imagined is that the young woman threatening her reign has been training in the art of war with a huntsman (Chris Hemsworth, Thor) dispatched to kill her. Sam Claflin (Pirates of the Caribbean: On Stranger Tides) joins the cast as the prince long enchanted by Snow White's beauty and power. The breathtaking new vision of the legendary tale is from Joe Roth, the producer of Alice in Wonderland, producer Sam Mercer (The Sixth Sense) and acclaimed commercial director and state-of-the-art visualist Rupert Sanders.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure</li>
+<li data-theme="b"><a href="http://snowwhiteandthehuntsman.com" target="_blank">Visit the Official Site</a></li>
+<li>Director: Rupert Sanders</li>
+<li>Cast: Kristen Stewart, Charlize Theron, Chris Hemsworth, Sam Claflin</li>
+<li>Writers: Evan Daugherty</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/2-UMNSVX7_I" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 2: #Snow White and the Huntsman -->
+
+
+
+
+
+<!-- bof Movie 3: #The Hunger Games -->
+<div data-role="page" id="theHungerGames">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>The Hunger Games</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>The Hunger Games</h2>
+<div class="movieImage">
+<img src="../images/the-hunger-games_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>Every year in the ruins of what was once North America, the evil Capitol of the nation of Panem forces each of its twelve districts to send a teenage boy and girl to compete in the Hunger Games. A twisted punishment for a past uprising and an ongoing government intimidation tactic, The Hunger Games are a nationally televised event in which "Tributes" must fight with one another until one survivor remains. Pitted against highly-trained Tributes who have prepared for these Games their entire lives, Katniss is forced to rely upon her sharp instincts as well as the mentorship of drunken former victor Haymitch Abernathy. If she's ever to return home to District 12, Katniss must make impossible choices in the arena that weigh survival against humanity and life against love. THE HUNGER GAMES is directed by Gary Ross, and produced by Nina Jacobson's Color Force in tandem with producer Jon Kilik. Suzanne Collins' best-selling novel, the first in a trilogy published by Scholastic that has over 16 million copies in print in the United States alone, has developed a massive global following.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure, Drama</li>
+<li data-theme="b"><a href="http://www.thehungergamesmovie.com/" target="_blank">Visit the Official Site</a></li>
+<li>Director: Gary Ross</li>
+<li>Cast: Jennifer Lawrence, Josh Hutcherson, Liam Hemsworth, Woody Harrelson, Elizabeth Banks, Stanley Tucci, Donald Sutherland, Wes Bentley, Toby Jones, Amandla Stenberg, Alexander Ludwig, Isabelle Fuhrman, Jacqueline Emerson, Paula Malcomson, Dayo Okeniyi, Jack Quaid, Leven Rambin, Willow Shields, Lenny Kravitz</li>
+<li>Writers: Gary Ross, Billy Ray, Suzanne Collins</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/qoUT7q2iTbQ" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 3: #The Hunger Games -->
+
+
+
+
+
+<!-- bof Movie 4: #The Amazing Spider-Man -->
+<div data-role="page" id="theAmazingSpiderman">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>The Amazing Spider-Man</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>The Amazing Spider-Man</h2>
+<div class="movieImage">
+<img src="../images/the-amazing-spiderman_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>The film, which is now in production and is being shot entirely in 3D, will be released on July 3, 2012. The film stars Andrew Garfield, Emma Stone, Rhys Ifans, Denis Leary, Campbell Scott, Irrfan Khan, Martin Sheen, and Sally Field. The film is directed by Marc Webb from a screenplay by James Vanderbilt and Alvin Sargent and Steve Kloves based on the Marvel Comic Book by Stan Lee and Steve Ditko. Laura Ziskin, Avi Arad, and Matt Tolmach are producing the Marvel Entertainment production for Columbia Pictures. The executive producers are Stan Lee, Kevin Feige, and Michael Grillo.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure, Thriller</li>
+<li data-theme="b"><a href="http://theamazingspiderman.com/" target="_blank">Visit the Official Site</a></li>
+<li>Director: Marc Webb</li>
+<li>Cast: Andrew Garfield, Emma Stone, Rhys Ifans, Denis Leary, Campbell Scott, Irrfan Khan, Martin Sheen, Sally Field</li>
+<li>Writers: Steve Kloves, James Vanderbilt, Alvin Sargent</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/oX9ZT3RbYE4" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 4: #The Amazing Spider-Man -->
+
+
+
+
+
+<!-- bof Movie 5: #Total Recall -->
+<div data-role="page" id="totalRecall">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Total Recall</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Total Recall</h2>
+<div class="movieImage">
+<img src="../images/total-recall_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>Total Recall is an action thriller about reality and memory, inspired anew by the famous short story "We Can Remember It For You Wholesale" by Philip K. Dick. Welcome to Rekall, the company that can turn your dreams into real memories. For a factory worker named Douglas Quaid (Colin Farrell), even though he's got a beautiful wife (Kate Beckinsale) who he loves, the mind-trip sounds like the perfect vacation from his frustrating life - real memories of life as a super-spy might be just what he needs. But when the procedure goes horribly wrong, Quaid becomes a hunted man. Finding himself on the run from the police - controlled by Chancellor Cohaagen (Bryan Cranston), the leader of the free world - Quaid teams up with a rebel fighter (Jessica Biel) to find the head of the underground resistance (Bill Nighy) and stop Cohaagen. The line between fantasy and reality gets blurred and the fate of his world hangs in the balance as Quaid discovers his true identity, his true love, and his true fate.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure</li>
+<li data-theme="b"><a href="http://WelcomeToRecall.com/" target="_blank">Visit the Official Site</a></li>
+<li>Director: Len Wiseman</li>
+<li>Cast: Colin Farrell, Kate Beckinsale, Jessica Biel, Bryan Cranston, John Cho, Bill Nighy</li>
+<li>Writers: Kurt Wimmer, Mark Bomback</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/GljhR5rk5eY" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 5: #Total Recall -->
+
+
+
+
+
+<!-- bof Movie 6: #Men In Black 3 -->
+<div data-role="page" id="menInBlack3">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Men In Black 3</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Men In Black 3</h2>
+<div class="movieImage">
+<img src="../images/men-in-black-3_LRG" />
+</div>
+<div data-role="collapsible">
+<h3>Synopsis</h3>
+<p>In Men in Black 3, Agents J (Will Smith) and K (Tommy Lee Jones) are back... in time. J has seen some inexplicable things in his 15 years with the Men in Black, but nothing, not even aliens, perplexes him as much as his wry, reticent partner. But when K's life and the fate of the planet are put at stake, Agent J will have to travel back in time to put things right. J discovers that there are secrets to the universe that K never told him -- secrets that will reveal themselves as he teams up with the young Agent K (Josh Brolin) to save his partner, the agency, and the future of humankind. The film is directed by Barry Sonnenfeld. The screenplay is written by Etan Cohen, based on the Malibu Comic by Lowell Cunningham. The producers are Walter F. Parkes and Laurie MacDonald, and the executive producers are Steven Spielberg and G. Mac Brown.</p>
+</div>
+<div data-role="collapsible">
+<h3>Details</h3>
+<ul data-role="listview">
+<li>Genre: Action and Adventure, Comedy, Science Fiction</li>
+<li data-theme="b"><a href="http://www.meninblack.com/" target="_blank">Visit the Official Site</a></li>
+<li>Director: Barry Sonnenfeld</li>
+<li>Cast: Will Smith, Tommy Lee Jones, Josh Brolin</li>
+</ul>
+<br />
+</div>
+<div data-role="collapsible">
+<h3>View Trailer</h3>
+<iframe width="275" height="150" src="http://www.youtube.com/embed/WjiOsRfVUVU" frameborder="0" allowfullscreen></iframe>
+</div>
+<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Movie 6: #Men In Black 3 -->
+
+<!-- eof Movies for Categories -->
+
+
+
+
+
+
+<!-- bof News 1-->
+<div data-role="page" id="news" data-add-back-btn="true">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>News</h1>
+<!--<a href="index.html" data-icon="check">Save</a>-->
+</div><!-- /header -->
+
+<div data-role="content">
+<ul data-role="listview" data-filter="true">
+<li data-role="list-divider">Thursday, April 6, 2012 <span class="ui-li-count">2</span></li>
+<li>
+<a href="http://www.getelastic.com/global-mobile-trends-infographic/" target="_blank">
+<h3>Global Mobile Trends [Infographic]</h3>
+<p><strong>Get Elastic</strong></p>
+<p>This Friday’s ‘Fographic is courtesy of CultureLabel.com, covering how the world uses mobile.</p><p>The stat that intrigues me the most is the forecast that mobile web use will overtake desktop in 3 years!</p>
+<p class="ui-li-aside"><strong>11:23</strong>PM</p>
+</a>
+</li>
+<li>
+<a href="http://www.getelastic.com/escape-from-the-walled-garden-how-html5-trumps-native-mobile-apps/" target="_blank">
+<h3>Escape From The Walled Garden: How HTML5 Trumps Native Mobile Apps</h3>
+<p><strong>GetElastic</strong></p>
+<p >While there is some worthwhile discussion around “should you have a mobile app, website or both,” there’s a strong case for building app-like mobile website experiences with HTML5.</p>
+<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+</a>
+</li>
+<li data-role="list-divider">Wednesday, April 5, 2012 <span class="ui-li-count">1</span></li>
+<li>
+<a href="http://www.getelastic.com/how-big-is-the-internet-infographic/" target="_blank">
+<h3>How Big Is the Internet? [Infographic]</h3>
+<p><strong>GetElastic</strong></p>
+<p>Did you know there are more iPhones sold than babies born? Check out this and a whack of other amazing stats that illustrate a day in the life of the Internet</p>
+<p class="ui-li-aside"><strong>4:48</strong>PM</p>
+</a>
+</li>
+<li data-role="list-divider">Tuesday, April 4, 2012 <span class="ui-li-count">3</span></li>
+<li>
+<a href="http://www.getelastic.com/can-media-companies-get-their-mojo-back/" target="_blank">
+<h3>Can Media Companies Get Their Mojo Back?</h3>
+<p><strong>GetElastic</strong></p>
+<p>Elastic Path recently hosted a webinar series focused on digital commerce. Part two, entitled A Look Inside Tomorrow’s Digital Commerce Platform, features Forrester Research Senior Analyst Peter Sheldon, and is now available for viewing.</p>
+<p class="ui-li-aside"><strong>12:47</strong>PM</p>
+</a>
+</li>
+<li>
+<a href="http://www.getelastic.com/whats-your-conversation-index-infographic/" target="_blank">
+<h3>Whats Your Conversation Index? [Infographic]</h3>
+<p><strong>Get Elastic Ecommerce Blog</strong></p>
+<p>The data is collected from 11 million consumer conversations. While it’s interesting to see data across a large number of businesses, the important thing is how does this apply to your business.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://uxdesign.smashingmagazine.com/2012/04/05/art-of-launching-app-case-study/" target="_blank">
+<h3>The Art Of Launching An App: A Case Study</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>Anyone in the app business knows that marketing an app is tough. And according to a recent article on TechCrunch, “Getting a mobile app noticed in the increasingly crowded mobile app market is more difficult than ever.”</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/" target="_blank">
+<h3>Drop Caps: Historical Use And Current Best Practices With CSS</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>The practice of using a large letter to mark the start of a text has been around for almost two thousand years. Illustrated caps increased usability by marking important passages and guiding readers through the text.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2012/04/02/keep-your-analytics-data-safe-and-clean/" target="_blank">
+<h3>Keep Your Analytics Data Safe And Clean</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>Whoever works with analytics on a day-to-to-day basis knows how important it is to have a continuity with the data. Any slip might be fatal: data can disappear, trends misunderstood and jobs lost. </p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://sixrevisions.com/design-showcase-inspiration/minimalist-portfolio-website/" target="_blank">
+<h3>30 Minimalist Portfolio Website Designs for Inspiration</h3>
+<p><strong>Six Revisions</strong></p>
+<p>There seems to be a recent trend whereby creatives are aesthetically stripping down their online portfolios to their bare essentials.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://sixrevisions.com/web_design/undesign-portfolio-website/" target="_blank">
+<h3>“Undesign” Your Portfolio Website</h3>
+<p><strong>Six Revisions</strong></p>
+<p>Even the most ineffective, unattractive or simple of man-made objects have been designed in some way. The same is true for the Web</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+</ul>
+
+<br />
+
+<div data-role="fieldcontain">
+<a href="#news2" data-role="button">Load More Messages</a>
+</div>
+
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar">
+<ul>
+<!--<li>
+<a href="about_us.html">About</a></li>-->
+<li>
+<a href="contact_us.html">Contact</a></li>
+<li>
+<a href="faq.html">FAQs</a></li>
+<li>
+<a href="news1.html">News</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /footer -->
+</div>
+<!-- eof News 1-->
+
+
+
+
+
+
+
+
+
+
+
+<!-- bof News 1-->
+<div data-role="page" id="news2" data-add-back-btn="true">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>News</h1>
+<!--<a href="index.html" data-icon="check">Save</a>-->
+</div><!-- /header -->
+
+<div data-role="content">
+<ul data-role="listview" data-filter="true">
+<li data-role="list-divider">Thursday, April 6, 2012 <span class="ui-li-count">2</span></li> <li>
+<a href="http://tympanus.net/codrops/2012/04/03/color-and-emotion-what-does-each-hue-mean/" target="_blank">
+<h3>CODROPS</h3>
+<p><strong>Color and Emotion: What Does Each Hue Mean?</strong></p>
+<p>You have probably heard people refer to warm and cool colors when making choices about how to paint a room or what shade of makeup a woman</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li data-role="list-divider">Wednesday, April 5, 2012 <span class="ui-li-count">1</span></li>
+<li>
+<a href="http://tympanus.net/codrops/2012/04/03/color-and-emotion-what-does-each-hue-mean/" target="_blank">
+<h3>CODROPS</h3>
+<p><strong>Responsive Horizontal Layout</strong></p>
+<p>Today we want to show you how to create a horizontal layout with several content panels. The idea is to make each panel individually scrollable and animate a cont</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li data-role="list-divider">Tuesday, April 4, 2012 <span class="ui-li-count">3</span></li>
+<li>
+<a href="http://tympanus.net/codrops/2012/03/28/add-impact-to-type-driven-projects/" target="_blank">
+<h3>CODROPS</h3>
+<p><strong>Add Impact to Type-driven Projects</strong></p>
+<p>When working with type-driven projects it is of utmost importance to create a distinct hierarchy in the design, while</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.zencartoptimization.com/2012/02/28/local-marketing-with-google-adwords-express/" target="_blank">
+<h3>ZenCart Optimization</h3>
+<p><strong>Local Marketing With Google Adwords Express</strong></p>
+<p>In 2011 Google launched what they called AdWords Express dubbing it ‘the easiest way to advertise on Google.’ In this article I’ll cover some pros and cons of the service a</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.zencartoptimization.com/2011/12/20/mobile-marketing-trends/" target="_blank">
+<h3>ZenCart Optimization</h3>
+<p><strong>Mobile Marketing Trends</strong></p>
+<p>Like the TV before it and the computer after that, at one point it may have been hard to imagine much less believe that mobile devi</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.zencartoptimization.com/2011/10/31/abcs-of-ecommerce-success-part-2/" target="_blank">
+<h3>ZenCart Optimization</h3>
+<p><strong>ABCs of Ecommerce Success – Part 2</strong></p>
+<p>In part one of The ABCs of Ecommerce Success I outlined some important thinking which I consider makes up some very basic foundational elements of a successful ecommerce business. I talked about how many stores adopt a ‘traffic’, ‘product’, ‘website’ </p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://net.tutsplus.com/tutorials/html-css-techniques/css-refreshers-borders/" target="_blank">
+<h3>Net Tuts+</h3>
+<p><strong>CSS Refreshers: Borders </strong></p>
+<p>Sure, we’re all familiar with borders. Is there anything new that could possibly be introduced? Well, I bet there’s quite a few things in this article that you never knew about!</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://net.tutsplus.com/sessions/build-a-contacts-manager-using-backbone-js/" target="_blank">
+<h3>Net Tuts+</h3>
+<p><strong>Build a Contacts Manager Using Backbone.js </strong></p>
+<p>In this series, we’re going to learn how to build a fully functional contacts manager using Backbone.js, Underscore.js, and jQuery.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://net.tutsplus.com/sessions/build-a-contacts-manager-using-backbone-js/" target="_blank">
+<h3>Net Tuts+</h3>
+<p><strong>JavaScript Fundamentals: New Premium Course </strong></p>
+<p>I’m pleased to announce that Jeremy McPeak’s latest course, JavaScript Fundamentals, is now available on Tuts+ Premium! As the author of countless books</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+</ul>
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar">
+<ul>
+<!--<li>
+<a href="about_us.html">About</a></li>-->
+<li>
+<a href="contact_us.html">Contact</a></li>
+<li>
+<a href="faq.html">FAQs</a></li>
+<li>
+<a href="news1.html">News</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /footer -->
+</div>
+<!-- eof News 2-->
+
+
+
+<!-- bof Page X: #FilmStrip -->
+<div data-role="page" id="filmstrip" data-theme="b">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Filmstrip</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">
+<h2>Filmstrip</h2>
+<div class="iosSlider">
+<div class="slider">
+<div class="item" id="item1"></div>
+<div class="item" id="item2"></div>
+<div class="item" id="item3"></div>
+<div class="item" id="item4"></div>
+<div class="item" id="item5"></div>
+<div class="item" id="item6"></div>
+</div>
+</div>
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page X: #FilmStrip -->
+
+
+
+
+
+
+
+
+<!-- PopUp 1 #PopUp1 -->
+<div data-role="page" id="PopUp1">
+<div data-role="header" data-theme="e">
+<h1>Dialog</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="d">
+<h2>PopUp1</h2>
+<p>I have an id of "PopUp1" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
+<p><a href="index.html" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to Home Page</a></p>
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+<h4>Page Footer</h4>
+</div><!-- /footer -->
+</div><!-- /PopUp1 -->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+$.mobile.touchOverflowEnabled = true;
+});
+</script>
+<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.iosSlider').iosSlider({
+desktopClickDrag: true
+});
+
+});
+</script>
+
+<script src="../js/json.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

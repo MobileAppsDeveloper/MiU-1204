@@ -41,81 +41,62 @@
 		<![endif]-->
 	</head>
 
-<!-- bof Page 1: #index -->
-<div data-role="page" id="index" data-add-back-btn="true">
-
+<!-- bof Page 7a: #actionColumns -->
+<div data-role="page" id="actionColumns">
 <div data-role="header" data-position="inline">
 <a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
-<h1>The Outlet</h1>
-<!--<a href="index.html" data-icon="check">Save</a>-->
+<h1>Action & Adventure</h1>
 </div><!-- /header -->
+<div data-role="content">
+<h2>Action & Adventure</h2>
 
-<div data-role="content" >
 
-<div class="centeredContent">
-<img src="../images/movies.png" />
+<div data-role="fieldcontain">
+<div data-role="controlgroup" data-type="horizontal" class="centeredContent">
+<a href="action_rows.html" data-role="button" data-theme="a">Rows</a>
+<a href="action_columns.html" data-role="button" data-theme="b">Columns</a>
 </div>
-
-<div class="intro">
-Movies, MP3s, DVDs
 </div>
-
-<!--<h2>iRate My Flicks</h2>-->
-<br class="clearBoth" />
-<div class="content-primary">
-<ul data-role="listview" data-filter="true" data-inset="true">
-<li data-theme="b"><h3>Unlimited Instant Videos</h3><span class="ui-li-count">5</span>
-<p>You could have unlimited instant streaming of thousands of movies and TV shows included with an Amazon Prime membership at no additional cost.</p>
-<ul>
-<li data-theme="b"><a href="view_ratings.html">Categories</a><span class="ui-li-count">5</span>
-<ul>
-<li data-theme="b"><a href="action_rows.html">Action & Adventure<span class="ui-li-count">5</span></a></li>
-<li><a href="view_ratings.html">Anime</a></li>
-<li><a href="view_ratings.html">Children & Family</a></li>
-<li><a href="view_ratings.html">Classics</a></li>
-<li><a href="view_ratings.html">Comedies</a></li>
-<li><a href="view_ratings.html">Documentaries</a></li>
-<li><a href="view_ratings.html">Dramas</a></li>
-<li><a href="view_ratings.html">Faith & Spirituality</a></li>
-<li><a href="view_ratings.html">Foreign</a></li>
-<li><a href="view_ratings.html">Gay & Lesbian</a></li>
-<li><a href="view_ratings.html">Horror</a></li>
-<li><a href="view_ratings.html">Independent</a></li>
-<li><a href="view_ratings.html">Music</a></li>
-<li><a href="view_ratings.html">Musicals</a></li>
-<li><a href="view_ratings.html">Romance</a></li>
-<li><a href="view_ratings.html">Sci-Fi & Fantasy</a></li>
-<li><a href="view_ratings.html">Special Interest</a></li>
-<li><a href="view_ratings.html">Sport & Fitness</a></li>
-<li><a href="view_ratings.html">TV Shows</a></li>
-<li><a href="view_ratings.html">Thrilers</a></li> </ul>
-</li>
-
-<li><a href="view_ratings.html">Your Video Library<span class="ui-li-count">0</span></a></li>
-<li><a href="view_ratings.html">Watch Anywhere<span class="ui-li-count">0</span></a></li>
-</ul>
-</li>
-<li>
-<a href="news1.html"><h3>News</h3>
-<p>Infinite List Demo. The page was designed using the infinite list format and at the bottom displays a "load more messages" button that links to a second page.</p>
+<br />
+<ul data-role="listview" data-filter="true">
+<li><a href="the_avengers.html">
+<img src="../images/the-avengers.png" />
+<h3>The Avengers</h3>
+<p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the . ..</p>
 </a>
 </li>
-<li>
-<a href="filmstrip.html" data-ajax="false"><h3>Filmstrip</h3>
-<p>Filmstrip Demo. This filmstrip uses the iosslider script.</p>
+<li><a href="snow_white.html">
+<img src="../images/snow-white.png" />
+<h3>Snow White and the Huntsman</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays ...</p>
 </a>
 </li>
-<li>
-<a href="http://mobileappsdeveloper.github.com/MiU-1204" target="_blank"><h3>Github</h3>
-<p>The github page (opens in a new window)</p>
+<li><a href="hunger_games.html">
+<img src="../images/the-hunger-games.png" />
+<h3>The Hunger Games</h3>
+<p>Every year in the ruins of what was once North America, the evil Capitol of the nation of ...</p>
 </a>
 </li>
-<li>
-<a href="http://github.com/MobileAppsDeveloper/MiU-1204" target="_blank"><h3>Repository</h3>
-<p>The github repository (opens in a new window)</p>
+<li><a href="spiderman.html">
+<img src="../images/the-amazing-spiderman.png" />
+<h3>The Amazing Spider-Man</h3>
+<p>The film, which is now in production and is being shot entirely in 3D, will be released on July ...</p>
+</a>
+</li>
+<li><a href="total_recall.html">
+<img src="../images/total-recall.png" />
+<h3>Total Recall</h3>
+<p>Total Recall is an action thriller about reality and memory, inspired anew by the famous short...</p>
+</a>
+</li>
+<li><a href="men_in_black.html">
+<img src="../images/men-in-black-3.png" />
+<h3>Men in Black 3</h3>
+<p>In Men in Black 3, Agents J (Will Smith) and K (Tommy Lee Jones) are back... in time. J has ...</p>
 </a>
 </li>
 </ul>
+</div><!-- /content -->
 
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
@@ -129,7 +110,9 @@ Movies, MP3s, DVDs
 	</div><!-- /footer -->
 </div>
 
-</div><!--/content-primary -->
+</div>
+<!-- eof Page 7a: #actionColumns -->
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 <script>

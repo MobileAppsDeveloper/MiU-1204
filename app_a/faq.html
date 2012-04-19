@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body> 
+	
+<!-- bof Page 3: #faq -->
+	<div data-role="page" id="faq" data-theme="b">
+		<div data-role="header" data-position="inline">
+			<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+			<h1>FAQs</h1>
+		</div><!-- /header -->
+		<div data-role="content" data-theme="b">	
+			<h2>Frequently Asked Questions</h2>
+			<p>Coming Soon</p>			
+			<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>			
+		</div><!-- /content -->
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="favorites.html">FAVs</a></li>
+					<li><a href="contact_us.html">Contact</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="news1.html">News</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+	</div>
+	<!-- eof Page 3: #faq -->
+	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				$.mobile.touchOverflowEnabled = true;
+			});
+		</script>		
+		<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>	
+		<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					desktopClickDrag: true
+				});
+				
+			});
+		</script>
+			
+		<script src="../js/json.js"></script>	
+		<script src="../js/main.js"></script>	
+	
+	</body>
+</html>

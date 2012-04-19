@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<!-- bof News 1-->
+<div data-role="page" id="news" data-add-back-btn="true">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>News</h1>
+<!--<a href="index.html" data-icon="check">Save</a>-->
+</div><!-- /header -->
+
+<div data-role="content">
+<ul data-role="listview" data-filter="true">
+<li data-role="list-divider">Thursday, April 6, 2012 <span class="ui-li-count">2</span></li>
+<li>
+<a href="http://www.getelastic.com/global-mobile-trends-infographic/" target="_blank">
+<h3>Global Mobile Trends [Infographic]</h3>
+<p><strong>Get Elastic</strong></p>
+<p>This Friday’s ‘Fographic is courtesy of CultureLabel.com, covering how the world uses mobile.</p><p>The stat that intrigues me the most is the forecast that mobile web use will overtake desktop in 3 years!</p>
+<p class="ui-li-aside"><strong>11:23</strong>PM</p>
+</a>
+</li>
+<li>
+<a href="http://www.getelastic.com/escape-from-the-walled-garden-how-html5-trumps-native-mobile-apps/" target="_blank">
+<h3>Escape From The Walled Garden: How HTML5 Trumps Native Mobile Apps</h3>
+<p><strong>GetElastic</strong></p>
+<p >While there is some worthwhile discussion around “should you have a mobile app, website or both,” there’s a strong case for building app-like mobile website experiences with HTML5.</p>
+<p class="ui-li-aside"><strong>9:18</strong>AM</p>
+</a>
+</li>
+<li data-role="list-divider">Wednesday, April 5, 2012 <span class="ui-li-count">1</span></li>
+<li>
+<a href="http://www.getelastic.com/how-big-is-the-internet-infographic/" target="_blank">
+<h3>How Big Is the Internet? [Infographic]</h3>
+<p><strong>GetElastic</strong></p>
+<p>Did you know there are more iPhones sold than babies born? Check out this and a whack of other amazing stats that illustrate a day in the life of the Internet</p>
+<p class="ui-li-aside"><strong>4:48</strong>PM</p>
+</a>
+</li>
+<li data-role="list-divider">Tuesday, April 4, 2012 <span class="ui-li-count">3</span></li>
+<li>
+<a href="http://www.getelastic.com/can-media-companies-get-their-mojo-back/" target="_blank">
+<h3>Can Media Companies Get Their Mojo Back?</h3>
+<p><strong>GetElastic</strong></p>
+<p>Elastic Path recently hosted a webinar series focused on digital commerce. Part two, entitled A Look Inside Tomorrow’s Digital Commerce Platform, features Forrester Research Senior Analyst Peter Sheldon, and is now available for viewing.</p>
+<p class="ui-li-aside"><strong>12:47</strong>PM</p>
+</a>
+</li>
+<li>
+<a href="http://www.getelastic.com/whats-your-conversation-index-infographic/" target="_blank">
+<h3>Whats Your Conversation Index? [Infographic]</h3>
+<p><strong>Get Elastic Ecommerce Blog</strong></p>
+<p>The data is collected from 11 million consumer conversations. While it’s interesting to see data across a large number of businesses, the important thing is how does this apply to your business.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://uxdesign.smashingmagazine.com/2012/04/05/art-of-launching-app-case-study/" target="_blank">
+<h3>The Art Of Launching An App: A Case Study</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>Anyone in the app business knows that marketing an app is tough. And according to a recent article on TechCrunch, “Getting a mobile app noticed in the increasingly crowded mobile app market is more difficult than ever.”</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2012/04/03/drop-caps-historical-use-and-current-best-practices/" target="_blank">
+<h3>Drop Caps: Historical Use And Current Best Practices With CSS</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>The practice of using a large letter to mark the start of a text has been around for almost two thousand years. Illustrated caps increased usability by marking important passages and guiding readers through the text.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://www.smashingmagazine.com/2012/04/02/keep-your-analytics-data-safe-and-clean/" target="_blank">
+<h3>Keep Your Analytics Data Safe And Clean</h3>
+<p><strong>Smashing Magazine</strong></p>
+<p>Whoever works with analytics on a day-to-to-day basis knows how important it is to have a continuity with the data. Any slip might be fatal: data can disappear, trends misunderstood and jobs lost. </p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://sixrevisions.com/design-showcase-inspiration/minimalist-portfolio-website/" target="_blank">
+<h3>30 Minimalist Portfolio Website Designs for Inspiration</h3>
+<p><strong>Six Revisions</strong></p>
+<p>There seems to be a recent trend whereby creatives are aesthetically stripping down their online portfolios to their bare essentials.</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+<li>
+<a href="http://sixrevisions.com/web_design/undesign-portfolio-website/" target="_blank">
+<h3>“Undesign” Your Portfolio Website</h3>
+<p><strong>Six Revisions</strong></p>
+<p>Even the most ineffective, unattractive or simple of man-made objects have been designed in some way. The same is true for the Web</p>
+<p class="ui-li-aside"><strong>11:23</strong>AM</p>
+</a>
+</li>
+</ul>
+
+<br />
+
+<div data-role="fieldcontain">
+<a href="#news2" data-role="button">Load More Messages</a>
+</div>
+
+</div><!-- /content -->
+<div data-role="footer" data-position="fixed">
+<div data-role="navbar">
+<ul>
+<!--<li>
+<a href="about_us.html">About</a></li>-->
+<li>
+<a href="contact_us.html">Contact</a></li>
+<li>
+<a href="faq.html">FAQs</a></li>
+<li>
+<a href="news1.html">News</a></li>
+</ul>
+</div><!-- /navbar -->
+</div><!-- /footer -->
+</div>
+<!-- eof News 1-->
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+$.mobile.touchOverflowEnabled = true;
+});
+</script>
+<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.iosSlider').iosSlider({
+desktopClickDrag: true
+});
+
+});
+</script>
+
+<script src="../js/json.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>

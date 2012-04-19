@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body> 
+	
+<!-- bof Page 2: #addFlick -->
+<div data-role="page" id="addFlick" data-theme="b">
+<div data-role="header" data-position="inline">
+			<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Add A Flick</h1>
+</div><!-- /header -->
+<div data-role="content" data-theme="b">	
+<div id="dataLinks" data-role="controlgroup" data-type="horizontal">
+
+<a href="#" id="clear" title="Clear Stored Data" data-role="button" data-mini="true" data-ajax="false">Clear</a>
+<a href="#" id="displayLink" title="Display Data" data-role="button" data-mini="true" data-ajax="false">Display</a>
+<a href="#addFlick" id="addNew" style="display:none" data-role="button" data-mini="true" data-ajax="false">Add Flick</a>
+
+</div>
+
+<div id="myjSonList"></div>
+		<form action="#" method="post" id="addItemForm">
+				<span class="alert">* fields are required</span>		
+				<ul id="errors"></ul>		
+				<div data-role="fieldcontain" id="questions">		
+						<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+										<label for="itemTitle">Flick Title<span class="alert">*</span></label>
+										<input type="text" id="itemTitle" />
+								</fieldset>
+						</div>
+						
+						<div data-role="fieldcontain">								
+								<label for="genre">Genre<span class="alert">*</span></label>
+								<select name="genre" id="select" data-native-menu="false">
+										<option value="actionRows">Action & Adventure</option>
+										<option value="anime">Anime</option>
+										<option value="children">Children & Family</option>
+										<option value="classics">Classics</option>
+										<option value="comedies">Comedies</option>
+										<option value="documentaries">Documentaries</option>
+										<option value="dramas">Dramas</option>
+										<option value="faith">Faith & Spirituality</option>
+										<option value="foreign">Foreign</option>
+										<option value="gay">Gay & Lesbian</option>
+										<option value="horror">Horror</option>
+										<option value="independent">Independent</option>
+										<option value="music">Music</option>
+										<option value="musicals">Musicals</option>
+										<option value="romance">Romance</option>
+										<option value="sci-fi">Sci-Fi & Fantasy</option>
+										<option value="special">Special Interest</option>
+										<option value="sport">Sport & Fitness</option>
+										<option value="tv">TV Shows</option>
+										<option value="thrillers">Thrilers</option>
+								</select>
+						</div>
+						
+						<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+								<legend>Rated</legend>
+										<input type="radio" checked value="NC-17" id="nc-17" name="condition" /><label for="nc-17">NC-17</label>
+										<input type="radio" value="R" id="r" name="condition" /><label for="r">R</label>
+										<input type="radio" value="PG-13" id="pg-13" name="condition" /><label for="pg-13">PG-13</label>
+										<input type="radio" value="PG" id="poor" name="condition" /><label for="poor">PG</label>
+								</fieldset>
+						</div>
+						
+						<div data-role="fieldcontain">
+								<label class="displayBlock" for="description">Description</label>
+								<textarea id="description" placeholder="Type additional Information here"></textarea>
+						</div>	
+						
+						<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">
+										<legend>Favorites</legend>
+										<legend for="irating">iRating</legend>
+										<input type="range" min="1" max="5" name="irating" id="irating" />
+								</fieldset>
+						</div>
+						
+						<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">	
+										<label for="favorite">Save as Favorite</label>
+										<input type="checkbox" value="Save as Favorite" id="favorite" name="favorite" />
+								</fieldset>
+						</div>
+						
+						<div data-role="fieldcontain">
+								<fieldset data-role="controlgroup">	
+								<label for="dateAdded">Date Added<span class="alert">*</span></label>
+										<input type="date" min="1960-01-01" max="2015-12-31" id="dateAdded" name="dateAdded" placeholder="1960-07-25" />
+								</fieldset>
+						</div>
+						
+						<div class="submitButton">												
+						<input type="submit" value="Send Information" id="submit"/>						
+						</div>
+				
+
+		
+		</form>
+</div>													
+		</div><!-- /content -->	
+		<div data-role="footer" data-position="fixed">		
+			<div data-role="navbar">
+				<ul>
+					<li><a href="favorites.html">FAVs</a></li>
+					<li><a href="contact_us.html">Contact</a></li>
+					<li><a href="faq.html">FAQs</a></li>
+					<li><a href="news1.html">News</a></li>
+				</ul>
+			</div><!-- /navbar -->
+		</div><!-- /footer -->
+	</div>
+	<!-- eof Page 2: #addFlick -->
+	
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<script>
+			$(document).bind("mobileinit", function(){
+				$.mobile.touchOverflowEnabled = true;
+			});
+		</script>		
+		<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>	
+		<script type="text/javascript">
+			$(document).ready(function() {
+			
+				$('.iosSlider').iosSlider({
+					desktopClickDrag: true
+				});
+				
+			});
+		</script>
+			
+		<script src="../js/json.js"></script>	
+		<script src="../js/main.js"></script>	
+	
+	</body>
+</html>

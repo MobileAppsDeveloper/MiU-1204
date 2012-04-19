@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="All of Your Movies, Your Ratings." />
+		<meta name="keywords" content="html5, mobile development, media library, inventory, books, movies, games, software" />
+		<meta name="robots" content="index, follow" />
+		<meta name="author" content="Jose A. Carrillo" />
+		
+		<!-- Allows for proper display on iPhones -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Allows for proper display on Androids -->
+		<meta name="viewport" content="target-densitydpi=device-dpi" />
+		
+		<!-- Mobile IE needs ClearType for smoothing fonts -->
+		<meta http-equiv="clearType" content="on" />
+		
+		<!-- Allows for optimized display on older feature phones -->
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		
+		<title>The Outlet</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<link rel="stylesheet" href="../css/style_override.css">
+		
+		
+		<!-- JavaScript is normally at the end of the body, except for Modernizr which enables HTML5 elements & feature detects -->
+		<script src="js/libs/modernizr.custom.min.js"></script>
+
+
+
+		<!--<script>
+		$.get('data.html',function(data){
+					$('#something').append(data).trigger('create');
+					},'html');
+		</script>-->  
+		
+		<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+<!-- bof Page 7: #actionRows -->
+<div data-role="page" id="actionRows">
+<div data-role="header" data-position="inline">
+<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+<h1>Action & Adventure</h1>
+</div><!-- /header -->
+<div data-role="content">
+<h2>Action & Adventure</h2>
+
+
+<div data-role="fieldcontain">
+<div data-role="controlgroup" data-type="horizontal" class="centeredContent">
+<a href="action_rows.html" data-role="button" data-theme="b">Rows</a>
+<a href="action_columns.html" data-role="button" data-theme="a">Columns</a>
+</div>
+</div>
+
+<div class="ui-grid-a">
+<div class="ui-block-a">
+<a href="the_avengers.html">
+<img src="../images/the-avengers.png" />
+<h3>The Avengers</h3>
+<p>Marvel Studios presents in association with Paramount Pictures "Marvel's The Avengers"--the . ..</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="snow_white.html">
+<img src="../images/snow-white.png" />
+<h3>Snow White and the Huntsman</h3>
+<p>In the epic action-adventure Snow White and the Huntsman, Kristen Stewart (Twilight) plays ...</p>
+</a>
+</div>
+<div class="ui-block-a">
+<a href="hunger_games.html">
+<img src="../images/the-hunger-games.png" />
+<h3>The Hunger Games</h3>
+<p>Every year in the ruins of what was once North America, the evil Capitol of the nation of ...</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="spiderman.html">
+<img src="../images/the-amazing-spiderman.png" />
+<h3>The Amazing Spider-Man</h3>
+<p>The film, which is now in production and is being shot entirely in 3D, will be released on July ...</p>
+</a>
+</div>
+<div class="ui-block-a">
+<a href="total_recall.html">
+<img src="../images/total-recall.png" />
+<h3>Total Recall</h3>
+<p>Total Recall is an action thriller about reality and memory, inspired anew by the famous short...</p>
+</a>
+</div>
+<div class="ui-block-b">
+<a href="men_in_black.html">
+<img src="../images/men-in-black-3.png" />
+<h3>Men in Black 3</h3>
+<p>In Men in Black 3, Agents J (Will Smith) and K (Tommy Lee Jones) are back... in time. J has ...</p>
+</a>
+</div>
+</div>
+
+
+
+</div><!-- /content -->
+
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+			<ul>
+				<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
+				<li><a href="contact_us.html" data-icon="info" data-iconpos="top">Contact</a></li>
+				<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
+				<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div>
+
+</div>
+<!-- eof Page 7: #actionRows -->
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+<script>
+$(document).bind("mobileinit", function(){
+$.mobile.touchOverflowEnabled = true;
+});
+</script>
+<script type="text/javascript" src="../js/jquery.ios-slider-0.8.9.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+$('.iosSlider').iosSlider({
+desktopClickDrag: true
+});
+
+});
+</script>
+
+<script src="../js/json.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
