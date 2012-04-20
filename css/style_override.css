@@ -76,6 +76,20 @@ background: url(../images/total-recall.png) no-repeat 0 0;
 background: url(../images/the-avengers.png) no-repeat 0 0;
 }
 
+.error {
+display:block; margin:10px 0; color:#CC0000
+}
+
+.required {
+margin:10px 0; color:#CC0000
+}
+
+.biggerText {
+font-size: 120%
+}
+
+#signUpErrorsLink {display:none}
+
 /*
 html, body { height:100% }
 body, h1, h2, p { border:0; margin:0; padding:0; }
