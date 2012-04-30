@@ -27,7 +27,7 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 		
-		<title>The Outlet</title> 
+		<title>My Collection</title> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		<link rel="stylesheet" href="../css/style_override.css">
 		<link rel="stylesheet" href="../css/add2home.css">
@@ -54,11 +54,11 @@
 	</head>
 
 <!-- bof Page 1: #index -->
-<div data-role="page" id="index" data-add-back-btn="true">
+<div class="background" data-role="page" id="index" data-add-back-btn="true">
 
 <div data-role="header" data-position="inline">
-<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
-<h1>The Outlet</h1>
+<img class="logo" src="../images/movies_small.png" /><a href="index.html" data-icon="home" data-iconpos="notext" data-ajax="false">Home</a>
+<h1>My Collection</h1>
 <!--<a href="index.html" data-icon="check">Save</a>-->
 </div><!-- /header -->
 
@@ -132,10 +132,10 @@ Movies, MP3s, DVDs
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 				<ul>
-					<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
-					<li><a href="account.html" data-icon="info" data-iconpos="top">Account</a></li>
-					<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
-					<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
 				</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->

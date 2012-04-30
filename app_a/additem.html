@@ -16,7 +16,7 @@
 		<!-- Allows for optimized display on older feature phones -->
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
-		
+		<link rel="stylesheet" href="../css/style_override.css">
 		<title>iRate My Flicks</title> 
 
 		
@@ -102,20 +102,16 @@
 			
 			<br class="clearBoth" />
 		
-			<footer id="footer">
-				
-				<div class="footerNav">
-				
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
 				<ul>
-					<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
-					<li><a href="account.html" data-icon="info" data-iconpos="top">Account</a></li>
-					<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
-					<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
 				</ul>
-				</div>	
-			
-				<p id="copyrights">Developed by Jose A. Carrillo</p>
-			</footer>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 			
 		<script src="../js/json.js"></script>	
 		<script src="../js/main.js"></script>	

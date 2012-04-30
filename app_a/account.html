@@ -21,7 +21,7 @@
 		<meta name="HandheldFriendly" content="true"/>
 		<meta name="MobileOptimized" content="320"/>
 		
-		<title>The Outlet</title> 
+		<title>My Collection</title> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		<link rel="stylesheet" href="../css/style_override.css">
 		
@@ -36,12 +36,12 @@
 	<body> 
 	
 <!-- bof Page 4: #signUp -->
-	<div data-role="page" id="signUp" data-theme="b">
+	<div class="background" data-role="page" id="signUp">
 		<div data-role="header" data-position="inline">
-			<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+			<img class="logo" src="../images/movies_small.png" /><a href="index.html" data-icon="home" data-iconpos="notext" data-ajax="false">Home</a>
 			<h1>Login / Sign Up</h1>
 		</div><!-- /header -->
-		<div data-role="content" data-theme="d">
+		<div data-role="content">
 					
 <form action="#" method="post" id="signUpForm">
 
@@ -70,7 +70,7 @@
 			</div>
 
 			<div data-role="fieldcontain">
-	         <label for="address1">Address:</label>
+	         <label for="address1">Address<span class="required">*</span>:</label>
 	         <input type="text" name="address1" id="address1" value="" class="required"  />
 			</div>
 
@@ -80,12 +80,12 @@
 			</div>
 
 			<div data-role="fieldcontain">
-	         <label for="city">City:</label>
+	         <label for="city">City<span class="required">*</span>:</label>
 	         <input type="text" name="city" id="city" value="" class="required"  />
 			</div>
 
 			<div data-role="fieldcontain">
-				<label for="state" class="select">Your state:</label>
+				<label for="state" class="select">Your state<span class="required">*</span>:</label>
 				<select name="state" id="state">
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -145,7 +145,7 @@
 			</div>
 
 			<div data-role="fieldcontain">
-	         <label for="phone">Phone:</label>
+	         <label for="phone">Phone<span class="required">*</span>:</label>
 	         <input type="text" name="phone" id="phone" value="" class="required"  />
 			</div>
 			
@@ -190,7 +190,7 @@
 			 	<input type="range" name="slider" id="slider" value="5" min="0" max="10" data-highlight="true"  />
 			</div>
 
-		<div class="ui-body ui-body-b">
+		<div class="ui-body">
 		<fieldset class="ui-grid-a">
 				<div class="ui-block-a"><button type="submit" data-theme="a">Submit</button></div>
 				<div class="ui-block-b"><button type="submit" data-theme="d">Cancel</button></div>
@@ -204,10 +204,10 @@
 		<div data-role="footer" data-position="fixed">		
 			<div data-role="navbar">
 				<ul>
-					<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
-					<li><a href="account.html" data-icon="info" data-iconpos="top">Account</a></li>
-					<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
-					<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
 				</ul>
 			</div><!-- /navbar -->
 		</div><!-- /footer -->
@@ -229,9 +229,16 @@
 			<p><a href="#one" data-rel="back" data-role="button" data-inline="true" data-icon="back">Back to Sign Up Page</a></p>	
 		</div><!-- /content -->
 		
-		<div data-role="footer">
-			<h4>&nbsp;</h4>
-		</div><!-- /footer -->
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
+				<ul>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
+				</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 	</div>
 
 	

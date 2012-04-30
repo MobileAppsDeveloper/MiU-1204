@@ -19,7 +19,7 @@
 		
 		<title>iRate My Flicks</title> 
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-		<link rel="stylesheet" href="css/style_override.css">
+		<link rel="stylesheet" href="../css/style_override.css">
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 		<script>
@@ -41,25 +41,26 @@
 	<body> 
 	
 	<!-- bof Page X: #My Favorites -->
-	<div data-role="page" id="favs" data-theme="b">
+	<div class="background" data-role="page" id="favs" data-theme="b">
 		<div data-role="header" data-position="inline">
-			<a href="index.html" data-icon="home" data-iconpos="notext">Home</a>
+			<img class="logo" src="../images/movies_small.png" /><a href="index.html" data-icon="home" data-iconpos="notext" data-ajax="false">Home</a>
 			<h1>My Favorites</h1>
 		</div><!-- /header -->
-		<div data-role="content" data-theme="b">	
+		<div data-role="content">	
 			<h2>My Favorites</h2>
 			<p>Coming Soon</p>				
 			<p><a href="index.html" data-direction="reverse" data-role="button" data-theme="b">Back to Home Page</a></p>			
 		</div><!-- /content -->
-		<div data-role="footer" data-position="fixed">		
+	<div data-role="footer" data-position="fixed">
+		<div data-role="navbar">
 				<ul>
-					<li><a href="favorites.html" data-icon="star" data-iconpos="top">FAVs</a></li>
-					<li><a href="account.html" data-icon="info" data-iconpos="top">Account</a></li>
-					<li><a href="faq.html" data-icon="gear" data-iconpos="top">FAQs</a></li>
-					<li><a href="news1.html" data-icon="grid" data-iconpos="top">News</a></li>
+					<li><a href="favorites.html" data-icon="star" data-iconpos="top" data-ajax="false">FAVs</a></li>
+					<li><a href="account.html" data-icon="info" data-iconpos="top" data-ajax="false">Account</a></li>
+					<li><a href="faq.html" data-icon="gear" data-iconpos="top" data-ajax="false">FAQs</a></li>
+					<li><a href="news1.html" data-icon="grid" data-iconpos="top" data-ajax="false">News</a></li>
 				</ul>
-			</div><!-- /navbar -->
-		</div><!-- /footer -->
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
 	</div>
 	<!-- eof Page X: #My Favorites -->
 	
